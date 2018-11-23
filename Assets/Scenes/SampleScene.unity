@@ -189,9 +189,10 @@ GameObject:
   - component: {fileID: 534669905}
   - component: {fileID: 534669904}
   - component: {fileID: 534669903}
+  - component: {fileID: 534669906}
   m_Layer: 0
   m_Name: Main Camera
-  m_TagString: Untagged
+  m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -249,13 +250,28 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 534669902}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1, z: -10}
+  m_LocalRotation: {x: 0.60876137, y: 0, z: 0, w: 0.7933534}
+  m_LocalPosition: {x: 18, y: 15, z: 18}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 75, y: 0, z: 0}
+--- !u!114 &534669906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 534669902}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5bf5ad660e00c497cbc46447257cfc27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  zoomSpeed: 0.1
+  xLimit: 20
+  yLimit: 20
 --- !u!1 &1969136031
 GameObject:
   m_ObjectHideFlags: 0
@@ -289,7 +305,7 @@ MonoBehaviour:
   cellSize: {x: 1, y: 1}
   irregular: 1
   mapRadio: 10
-  touchPoints: 1
+  touchPoints: 2
   cellPrefabs:
   - {fileID: 1783653106863802, guid: 181aeb2d1f76948bcb25d018bfe22e7f, type: 2}
   - {fileID: 1504930246887478, guid: 16e4588d4abba4c6d985e2b3d8386941, type: 2}
@@ -333,7 +349,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.125
   m_BuildHeightMesh: 0
   m_NavMeshData: {fileID: 0}
 --- !u!114 &1969136035
@@ -349,4 +365,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   surfaces:
   - {fileID: 1969136034}
-  bakeDelay: 0.01
+  unitPrefabs:
+  - {fileID: 1210297936602782, guid: ba73286cc61054976962c136d79e7d98, type: 2}
+  - {fileID: 1210297936602782, guid: ba73286cc61054976962c136d79e7d98, type: 2}
+  - {fileID: 1210297936602782, guid: ba73286cc61054976962c136d79e7d98, type: 2}
+  - {fileID: 1210297936602782, guid: 37247fa8ed7994de0a5f8a79169f1de7, type: 2}
+  - {fileID: 1210297936602782, guid: 37247fa8ed7994de0a5f8a79169f1de7, type: 2}
+  - {fileID: 1210297936602782, guid: 37247fa8ed7994de0a5f8a79169f1de7, type: 2}
+  spawnPoints:
+  - {x: 19.5, y: 0.7, z: 19.5}
+  - {x: 18.5, y: 0.7, z: 19.5}
+  - {x: 19.5, y: 0.7, z: 18.5}
+  - {x: -19.5, y: 0.7, z: -19.5}
+  - {x: -18.5, y: 0.7, z: -19.5}
+  - {x: -19.5, y: 0.7, z: -18.5}

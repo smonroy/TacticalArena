@@ -133,7 +133,7 @@ public class Map : MonoBehaviour
     }
 
     private void BuildMap(int touchPoints = 1) {
-        List<Cell>[] boundary = new List<Cell>[2] { new List<Cell>(), new List<Cell>() };
+        List<Cell>[] boundary = { new List<Cell>(), new List<Cell>() };
         boundary[0].AddRange(spawnCells);
 
         Cell center = map[(int)(mapSize.x / 2), (int)(mapSize.y / 2)];
